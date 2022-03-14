@@ -19,7 +19,7 @@ const Contact = () => {
 
     const headers = {
         'Content-Type': 'multipart/form-data',
-        "Access-Control-Allow-Origin": "https://denisse-app-backend.herokuapp.com/"
+        "Access-Control-Allow-Origin": "https://denisse-app-backend.herokuapp.com"
       }
 
     const updateRecaptchaToken = (token) => {

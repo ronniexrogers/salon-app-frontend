@@ -19,7 +19,7 @@ const App = () => {
   const [userData, setUserData] = useState({})
   const [dataFromDB, setDataFromDB] = useState(null)
   const headers = {
-    "Access-Control-Allow-Origin": "https://denisse-app-backend.herokuapp.com/"
+    "Access-Control-Allow-Origin": "https://denisse-app-backend.herokuapp.com"
   }
 
   useEffect(() => {

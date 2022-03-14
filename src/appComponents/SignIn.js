@@ -12,7 +12,7 @@ const SignIn = ({ userData, setUserData, isLoggedIn, setIsLoggedIn }) => {
     const navigate = useNavigate()
     const headers = {
         'Content-Type': 'application/json',
-        "Access-Control-Allow-Origin": "https://denisse-app-backend.herokuapp.com/"}
+        "Access-Control-Allow-Origin": "https://denisse-app-backend.herokuapp.com"}
 
     const createUser = async () => {
         const userInfo = {
