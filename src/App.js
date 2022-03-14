@@ -25,9 +25,9 @@ const App = () => {
   useEffect(() => {
     axios.get(`https://denisse-app-backend.herokuapp.com/api/users/${userData.googleId}`)
     .then ((res) => {
-      setDataFromDB(res.data[0])
+      setDataFromDB(res.data)
     })
-  }, [userData])
+  }, [setIsLoggedIn])
   console.log(dataFromDB)
   console.log(userData)
 
