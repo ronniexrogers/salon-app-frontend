@@ -40,7 +40,7 @@ const Contact = () => {
             "g-recaptcha-response": recaptchaToken
         }
         try {
-            await axios.post(formSparkUrl, formData, { withCredentials: true }, { headers: headers })
+            await axios.post(formSparkUrl, formData, { headers: headers })
             recaptchaRef.current.reset()
             modal.style.display = "block"
         }catch(err) {

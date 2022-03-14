@@ -22,7 +22,7 @@ const SignIn = ({ userData, setUserData, isLoggedIn, setIsLoggedIn }) => {
             googleId: userData.googleId,
             profilePicturePath: userData.imageUrl,
         }
-        const result = await axios.post('https://denisse-app-backend.herokuapp.com/api/users/createUser', userInfo, { withCredentials: true }, { headers: headers})
+        const result = await axios.post('https://denisse-app-backend.herokuapp.com/api/users/createUser', userInfo, { headers: headers})
         return result.data
     }
 
