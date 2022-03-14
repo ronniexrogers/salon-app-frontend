@@ -6,7 +6,7 @@ import { useNavigate } from "react-router-dom"
 
 const Nav = ({ userData, setIsLoggedIn, isLoggedIn }) => {
     const [showLogoutButton, setShowLogoutButton] = useState(false)
-    const clientId = '996392350039-i5cvbfm256vdifleehi4j375nh164lk5.apps.googleusercontent.com'
+    const clientId = '996392350039-hntcggummele2vi5oam219mnqu1gq8a6.apps.googleusercontent.com'
     const navigate = useNavigate()
     const modal = document.querySelector('.loggedout-modal')
 

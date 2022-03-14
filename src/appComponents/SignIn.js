@@ -6,7 +6,7 @@ const axios = require('axios')
 
 const SignIn = ({ userData, setUserData, isLoggedIn, setIsLoggedIn }) => {
     
-    const clientId = '996392350039-i5cvbfm256vdifleehi4j375nh164lk5.apps.googleusercontent.com'
+    const clientId = '996392350039-hntcggummele2vi5oam219mnqu1gq8a6.apps.googleusercontent.com'
     const [showLoginButton, setShowLoginButton] = useState(true)
     const [showLogoutButton, setShowLogoutButton] = useState(false)
     const navigate = useNavigate()
