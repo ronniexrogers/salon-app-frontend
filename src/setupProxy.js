@@ -4,7 +4,7 @@ module.exports = function(app) {
   app.use(
     '/api',
     createProxyMiddleware({
-      target: 'http://localhost:5001',
+      target: 'https://denisse-app-backend.herokuapp.com/',
       changeOrigin: true,
     })
   );

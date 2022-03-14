@@ -16,11 +16,11 @@ const MyProfile = ({ dataFromDB }) => {
 
 
     const handleDeleteOne = (id) => {
-        axios.delete(`http://localhost:5001/api/appointments/${id}`)
+        axios.delete(`https://denisse-app-backend.herokuapp.com/api/appointments/${id}`)
     }
 
     useEffect(() => {
-        axios.get(`http://localhost:5001/api/appointments`)
+        axios.get(`https://denisse-app-backend.herokuapp.com/api/appointments`)
         .then ((res) => {
             setAppointments(res.data)
         })

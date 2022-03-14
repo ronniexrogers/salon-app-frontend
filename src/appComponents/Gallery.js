@@ -9,7 +9,7 @@ const Gallery = () => {
     const [allPhotos, setAllPhotos] = useState([])
 
     useEffect(() => {
-        axios.get(`http://localhost:5001/api/salonPhotos`)
+        axios.get(`https://denisse-app-backend.herokuapp.com/api/salonPhotos`)
         .then ((res) => {
             setAllPhotos(res.data)
         })

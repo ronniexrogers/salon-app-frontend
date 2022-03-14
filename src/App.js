@@ -20,7 +20,7 @@ const App = () => {
   const [dataFromDB, setDataFromDB] = useState(null)
 
   useEffect(() => {
-    axios.get(`http://localhost:5001/api/users/${userData.googleId}`)
+    axios.get(`https://denisse-app-backend.herokuapp.com/api/users/${userData.googleId}`)
     .then ((res) => {
       setDataFromDB(res.data[0])
     })
