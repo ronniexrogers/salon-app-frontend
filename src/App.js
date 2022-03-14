@@ -27,7 +27,7 @@ const App = () => {
     .then ((res) => {
       setDataFromDB(res.data)
     })
-  }, [setIsLoggedIn])
+  }, [userData])
   console.log(dataFromDB)
   console.log(userData)
 
