@@ -47,7 +47,7 @@ const SignIn = ({ userData, setUserData, isLoggedIn, setIsLoggedIn }) => {
 
     useEffect(() => {
         createUser()
-    }, [userData])
+    }, [onLoginSuccess])
 
     return ( 
         <div className="sign-in">
