@@ -31,7 +31,7 @@ const MyProfile = ({ dataFromDB }) => {
         formData.append("image", image)
         formData.append("description", description)
         formData.append("type", type)
-        const result = await axios.post('/api/salonPhotos', formData, { headers: {'Content-Type': 'multipart/form-data'}})
+        const result = await axios.post('https://denisse-app-backend.herokuapp.com/api/salonPhotos', formData, { headers: {'Content-Type': 'multipart/form-data'}})
         return result.data
       }
 
