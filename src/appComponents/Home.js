@@ -1,10 +1,15 @@
+import Footer from './Footer'
+
+
 const Home = () => {
-    
+
     return ( 
         <div className="home">
-            Yo, i'm the home component
+            <h1>Welcome!</h1>
+            The future site for world renowned hair stylist/nail tech Denisse Morales.
+        <Footer />
         </div>
-     );
+     )
 }
  
-export default Home;
+export default Home

@@ -32,3 +32,46 @@ img {
   max-width: 400px;
   margin: auto;
 }
+
+.sign-in{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -50px;
+  margin-left: -50px;
+}
+
+.appointment-modal{
+  display: none;
+  position: fixed;
+  z-index: 1; 
+  background-color: rgba(240, 176, 198, 0.5);
+  border: 2px solid black;
+  width: 500px;
+  height: 25%;
+}
+
+.contact-modal{
+  display: none;
+  position: fixed;
+  z-index: 1; 
+  background-color: rgba(240, 176, 198, 0.5);
+  border: 2px solid black;
+  width: 500px;
+  height: 25%;
+}
+
+.loggedout-modal{
+  display: none;
+  position: fixed;
+  z-index: 1; 
+  background-color: rgba(240, 176, 198, 0.5);
+  border: 2px solid black;
+  width: 500px;
+  height: 25%;
+}
+
+.footer{
+  background-color: rgba(243, 178, 229, 0.575);
+  border: solid black 1px
+}
