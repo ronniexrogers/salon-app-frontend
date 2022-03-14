@@ -25,6 +25,8 @@ const App = () => {
       setDataFromDB(res.data[0])
     })
   }, [userData])
+  console.log(dataFromDB)
+  console.log(userData)
 
 
   return (
