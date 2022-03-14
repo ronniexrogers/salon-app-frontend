@@ -17,11 +17,6 @@ const Contact = () => {
     const modal = document.querySelector('.contact-modal')
     const navigate = useNavigate()
 
-    const headers = {
-        'Content-Type': 'multipart/form-data',
-        "Access-Control-Allow-Origin": "https://denisse-app-backend.herokuapp.com"
-      }
-
     const updateRecaptchaToken = (token) => {
         setRecaptchaToken(token)
     }
@@ -40,7 +35,7 @@ const Contact = () => {
             "g-recaptcha-response": recaptchaToken
         }
         try {
-            await axios.post(formSparkUrl, formData, { headers: headers })
+            await axios.post(formSparkUrl, formData)
             recaptchaRef.current.reset()
             modal.style.display = "block"
         }catch(err) {
