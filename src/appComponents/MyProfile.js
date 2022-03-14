@@ -24,7 +24,7 @@ const MyProfile = ({ dataFromDB }) => {
         .then ((res) => {
             setAppointments(res.data)
         })
-    }, [appointments])
+    }, [])
 
     const postImage = async ({image, description}) => {
         const formData = new FormData()
