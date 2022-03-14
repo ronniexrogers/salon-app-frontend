@@ -10,6 +10,9 @@ const SignIn = ({ userData, setUserData, isLoggedIn, setIsLoggedIn }) => {
     const [showLoginButton, setShowLoginButton] = useState(true)
     const [showLogoutButton, setShowLogoutButton] = useState(false)
     const navigate = useNavigate()
+    const headers = {
+        'Content-Type': 'application/json',
+        "Access-Control-Allow-Origin": "https://denisse-app-backend.herokuapp.com/"}
 
     const createUser = async () => {
         const userInfo = {
@@ -19,7 +22,7 @@ const SignIn = ({ userData, setUserData, isLoggedIn, setIsLoggedIn }) => {
             googleId: userData.googleId,
             profilePicturePath: userData.imageUrl,
         }
-        const result = await axios.post('https://denisse-app-backend.herokuapp.com/api/users/createUser', userInfo, { headers: {'Content-Type': 'application/json'}})
+        const result = await axios.post('https://denisse-app-backend.herokuapp.com/api/users/createUser', userInfo, { headers: headers})
         return result.data
     }
 
