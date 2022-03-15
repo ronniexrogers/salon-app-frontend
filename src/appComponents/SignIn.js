@@ -14,6 +14,7 @@ const SignIn = ({ userData, setUserData, isLoggedIn, setIsLoggedIn }) => {
         'Content-Type': 'application/json'}
 
     const createUser = async () => {
+        try {
         const userInfo = {
             firstName: userData.givenName,
             lastName: userData.familyName,
@@ -23,6 +24,9 @@ const SignIn = ({ userData, setUserData, isLoggedIn, setIsLoggedIn }) => {
         }
         const result = await axios.post('https://denisse-app-backend.herokuapp.com/api/users/createUser', userInfo, { headers: headers})
         return result.data
+    }catch(err){
+        console.error(err)
+    }
     }
 
     const onLoginSuccess = async (res) => {
