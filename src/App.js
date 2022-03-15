@@ -19,11 +19,12 @@ const App = () => {
   const [userData, setUserData] = useState({})
   const [dataFromDB, setDataFromDB] = useState(null)
   const headers = {
-    "Access-Control-Allow-Origin": "https://denisse-app-backend.herokuapp.com"
+    "Access-Control-Allow-Origin": "https://denisse-app-backend.herokuapp.com",
+    'Access-Control-Allow-Origin': '*'
   }
 
   useEffect(() => {
-    axios.get(`https://denisse-app-backend.herokuapp.com/api/users/${userData.googleId}`)
+    axios.get(`https://denisse-app-backend.herokuapp.com/api/users/${userData.googleId}`, {headers: headers})
     .then ((res) => {
       setDataFromDB(res.data[0])
     })

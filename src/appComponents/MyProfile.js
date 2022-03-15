@@ -33,7 +33,8 @@ const MyProfile = ({ dataFromDB }) => {
         formData.append("type", type)
         const result = await axios.post('https://denisse-app-backend.herokuapp.com/api/salonPhotos', formData, { 
             headers: {
-                'Content-Type': 'multipart/form-data'}})
+                'Content-Type': 'multipart/form-data',
+                'Access-Control-Allow-Origin': '*'}})
         return result.data
       }
 
